@@ -14,9 +14,8 @@ public class Mastermind {
         SecretPlayer secretPlayer = new SecretPlayer(proposedPlayer);
 
         this.writeStartMessage();
-
+        secretPlayer.prepare();
         do {
-            secretPlayer.prepare();
             secretPlayer.write();
             proposedPlayer.propose();
             secretPlayer.answer();
