@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 public class ProposedCombination  extends Combination{
 
@@ -84,11 +86,11 @@ public class ProposedCombination  extends Combination{
         this.result = result;
     }
 
-    public void write(){
+     public void write(){
         result.write();
     }
 
-    public boolean isWinner(){
+     public boolean isWinner(){
         return result.isWinner();
     }
 

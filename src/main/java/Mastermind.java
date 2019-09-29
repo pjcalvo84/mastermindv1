@@ -47,7 +47,6 @@ public class Mastermind {
 
         Scanner sc = new Scanner(System.in);
 
-        // String input
         String nextPlay = sc.nextLine();
         if(nextPlay.equals("s"))
             return true;
