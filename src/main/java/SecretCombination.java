@@ -27,5 +27,18 @@ public class SecretCombination extends Combination {
         return colorsArray;
     }
 
+    public void calculateResult(ProposedCombination proposedCombination){
+        int damaged = 0;
+        int deads = 0;
+        for(int x =0; x < 4; x++){
+            if(proposedCombination.contains(secretCombination.combination[x], x)){
+                deads++;
+            }
+            else if(proposedCombination.contains(secretCombination.combination[x])){
+                damaged++;
+            }
+        }
 
+        proposedCombination.setResult(new Result(deads, damaged));
+    }
 }
