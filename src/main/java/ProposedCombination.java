@@ -74,7 +74,7 @@ public class ProposedCombination  extends Combination{
         return getCombinationrStringFormat().contains(String.valueOf(color.getColor()));
     }
 
-    private String getCombinationrStringFormat(){
+    private String getCombinationsStringFormat(){
         String combinationStringFormat="";
         for(int x=0; x<combination.length;x++){
             combinationStringFormat+=combination[x].getColor();
@@ -82,15 +82,15 @@ public class ProposedCombination  extends Combination{
         return combinationStringFormat;
     }
 
-     public void setResult(Result result){
+    public void setResult(Result result){
         this.result = result;
     }
 
-     public void write(){
+    public void write(){
         result.write();
     }
 
-     public boolean isWinner(){
+    public boolean isWinner(){
         return result.isWinner();
     }
 
