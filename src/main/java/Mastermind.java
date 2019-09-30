@@ -43,11 +43,26 @@ public class Mastermind {
     }
 
     private boolean read(){
-        System.out.print("Do you want to continue? (s/n): ");
+        boolean goodAnswer;
+        String nextPlay="";
+        do{
+            goodAnswer = false;
+            System.out.print("Do you want to continue? (s/n): ");
 
-        Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 
-        String nextPlay = sc.nextLine();
+            nextPlay = sc.nextLine();
+
+            if(nextPlay.equals("s") || nextPlay.equals("n")){
+                goodAnswer = true;
+            }
+            else{
+                System.out.println("Wrong response, they must be: s/n");
+            }
+
+        }
+        while(!goodAnswer);
+        
         if(nextPlay.equals("s"))
             return true;
         else
