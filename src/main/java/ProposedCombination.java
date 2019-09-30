@@ -71,7 +71,7 @@ public class ProposedCombination  extends Combination{
     }
 
     public boolean contains(Color color){
-        return getCombinationrStringFormat().contains(String.valueOf(color.getColor()));
+        return getCombinationsStringFormat().contains(String.valueOf(color.getColor()));
     }
 
     private String getCombinationsStringFormat(){

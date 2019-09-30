@@ -31,10 +31,10 @@ public class SecretCombination extends Combination {
         int damaged = 0;
         int deads = 0;
         for(int x =0; x < 4; x++){
-            if(proposedCombination.contains(secretCombination.combination[x], x)){
+            if(proposedCombination.contains(this.combination[x], x)){
                 deads++;
             }
-            else if(proposedCombination.contains(secretCombination.combination[x])){
+            else if(proposedCombination.contains(this.combination[x])){
                 damaged++;
             }
         }
